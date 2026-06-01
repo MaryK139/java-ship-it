@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class ParcelBox<T extends Parcel> {
-    List<T> box = new ArrayList<>();
+    private List<T> box = new ArrayList<>();
     private int maxWeight;
     private int currentWeight;
 
@@ -37,5 +37,13 @@ public class ParcelBox<T extends Parcel> {
 
     public void setCurrentWeight(int sumWeight) {
         this.currentWeight = sumWeight;
+    }
+
+    public List<T> getBox() {
+        return box;
+    }
+
+    public void setBox(List<T> box) {
+        this.box = box;
     }
 }

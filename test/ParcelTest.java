@@ -4,13 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class ParcelTest {
-    public ParcelBox<Parcel> box;
-    public Parcel standard;
-    public Parcel fragile;
-    public PerishableParcel perishable;
-    public Parcel lightParcel;
-    public Parcel heavyParcel;
-    public Parcel zeroWeight;
+    private static ParcelBox<Parcel> box;
+    private static Parcel standard;
+    private static Parcel fragile;
+    private static PerishableParcel perishable;
+    private static Parcel lightParcel;
+    private static Parcel heavyParcel;
+    private static Parcel zeroWeight;
 
     @BeforeEach
     void setUp() {
